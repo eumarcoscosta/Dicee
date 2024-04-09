@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14810.11" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14766.13"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,20 +20,49 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppBreweryBackground" translatesAutoresizingMaskIntoConstraints="NO" id="hDV-2r-SpX">
                                 <rect key="frame" x="-30" y="0.0" width="474" height="896"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppBreweryLogo" translatesAutoresizingMaskIntoConstraints="NO" id="L73-FM-GDd">
-                                <rect key="frame" x="112" y="418.66666666666669" width="190" height="59"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="AppBreweryLogo" translatesAutoresizingMaskIntoConstraints="NO" id="L73-FM-GDd">
+                                <rect key="frame" x="62" y="418.66666666666669" width="290" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="59" id="KYi-R1-1nr"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="1190" id="Lfd-YB-GVw"/>
+                                    <constraint firstAttribute="width" constant="290" id="TAP-iV-vbY"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="190" id="Td1-wd-2ui"/>
+                                    <constraint firstAttribute="height" constant="59" id="c9D-5q-hwG"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="190" id="pAK-uM-BXT"/>
+                                </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Meu teste de centralização" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8OX-sj-BVX">
+                                <rect key="frame" x="104" y="322" width="206" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="L73-FM-GDd" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="1db-x5-iqz"/>
+                            <constraint firstItem="L73-FM-GDd" firstAttribute="top" secondItem="8OX-sj-BVX" secondAttribute="bottom" constant="25" id="3eX-66-NUM"/>
+                            <constraint firstItem="8OX-sj-BVX" firstAttribute="top" secondItem="L73-FM-GDd" secondAttribute="bottom" constant="30" id="4TE-vu-7ta"/>
+                            <constraint firstItem="L73-FM-GDd" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="8cl-Rv-ncI"/>
+                            <constraint firstItem="8OX-sj-BVX" firstAttribute="top" secondItem="L73-FM-GDd" secondAttribute="bottom" constant="25.329999999999998" id="9bz-RE-FdK"/>
+                            <constraint firstItem="L73-FM-GDd" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="9h1-B6-YED"/>
+                            <constraint firstItem="8OX-sj-BVX" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Ioy-Sw-IuX"/>
+                            <constraint firstItem="8OX-sj-BVX" firstAttribute="top" secondItem="L73-FM-GDd" secondAttribute="bottom" constant="50" id="Me1-Re-EOF"/>
+                            <constraint firstItem="L73-FM-GDd" firstAttribute="top" secondItem="8OX-sj-BVX" secondAttribute="bottom" constant="25" id="O2X-Ky-sbN"/>
                             <constraint firstItem="hDV-2r-SpX" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="QG6-2s-aIE"/>
                             <constraint firstItem="hDV-2r-SpX" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailing" constant="30" id="Qkd-TS-52T"/>
+                            <constraint firstItem="8OX-sj-BVX" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="XTo-f1-HGw"/>
+                            <constraint firstItem="L73-FM-GDd" firstAttribute="top" secondItem="8OX-sj-BVX" secondAttribute="bottom" constant="59" id="XtW-dn-tn2"/>
+                            <constraint firstItem="L73-FM-GDd" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="ZVW-rO-Seg"/>
+                            <constraint firstItem="8OX-sj-BVX" firstAttribute="top" secondItem="L73-FM-GDd" secondAttribute="bottom" constant="-30" id="e6m-9G-hUd"/>
+                            <constraint firstItem="L73-FM-GDd" firstAttribute="top" secondItem="8OX-sj-BVX" secondAttribute="bottom" constant="25" id="eee-Mx-XLP"/>
+                            <constraint firstItem="L73-FM-GDd" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="ewv-7H-ohp"/>
                             <constraint firstItem="hDV-2r-SpX" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="-30" id="goO-U5-6AD"/>
                             <constraint firstItem="L73-FM-GDd" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="m4c-X5-94d"/>
                             <constraint firstAttribute="bottom" secondItem="hDV-2r-SpX" secondAttribute="bottom" id="pLe-ns-Vsl"/>
+                            <constraint firstItem="L73-FM-GDd" firstAttribute="top" secondItem="8OX-sj-BVX" secondAttribute="bottom" constant="25" id="tXq-1e-6H8"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -42,5 +73,8 @@
     <resources>
         <image name="AppBreweryBackground" width="596" height="842"/>
         <image name="AppBreweryLogo" width="190" height="59"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
